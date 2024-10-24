@@ -1,10 +1,11 @@
 {
   "extends": [
-    "next/core-web-vitals", 
+    "next/core-web-vitals",
     "next/typescript",
     "plugin:unicorn/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
@@ -19,7 +20,9 @@
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { "ignoreRestSiblings": true }
+      {
+        "ignoreRestSiblings": true
+      }
     ],
     "camelcase": "error",
     "default-case-last": "error",
